@@ -18,7 +18,7 @@ target_include_directories(cjson PRIVATE ${LUAJIT_INCLUDE_DIR})
 
 target_compile_definitions(cjson PRIVATE
     MULTIPLE_THREADS
-    LUA_VERSION_NUM=501
+    LUA_VERSION_NUM=${LUA_VERSION_NUM}
 )
 target_compile_options(cjson PRIVATE -fPIC -O2)
 # vi:ai et sw=4 ts=4:
