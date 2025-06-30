@@ -16,6 +16,6 @@ add_library(cjson STATIC ${CJSON_SRC})
 
 target_include_directories(cjson PRIVATE ${LUAJIT_INCLUDE_DIR})
 
-target_compile_definitions(cjson PRIVATE -DMULTIPLE_THREADS)
+target_compile_definitions(cjson PRIVATE -DMULTIPLE_THREADS-DLUA_VERSION_NUM=501)
 target_compile_options(cjson PRIVATE -fPIC -O2)
 # vi:ai et sw=4 ts=4:
